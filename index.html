@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+ <html>
+    <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title></title>
+       
+     <style>
+         *{padding: 0;
+        margin: 0;}
+
+       .top{
+        
+ width: 100%;
+ 
+ height: 90px;
+background: #D8E3AB url(image/ball.png) no-repeat 5% 35%;
+ }
+
+ .title{
+ font-size: 36px;
+ padding-top: 10px;
+ text-align: center;
+}
+.menu{
+ list-style: none;
+ position: absolute;
+ top: 10px;
+ right: 100px;
+}
+A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+    color: darkblue;
+   } 
+
+      
+
+   .slide {
+        width: 1362px;
+        height: 535px;
+        border: 1px solid #888;
+        position: relative;
+        text-align: center;
+    }
+	.slide  input {
+        display: none;
+    }
+
+    .slide  input + label {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 8px;
+        background: rgba(90, 90, 90, 0.8);
+        border: 2px solid rgba(190, 190, 190, 0.8);
+
+        cursor: pointer;
+
+        z-index: 100;
+        position: relative;
+
+        margin-right: 4px;
+        top: 90%;
+
+       
+    }
+
+    .slide  input + label:hover {
+        background: rgba(250, 250, 250, 0.8);
+    }
+
+    .slide  input:checked + label {
+        background: rgba(220, 220, 220, 0.8);
+    }
+	
+    .slide  div {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 0;
+    }
+	
+    .slide  div {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+    }
+
+    img {
+        width:500px;
+		height:300px;
+    }
+	
+    .slide  input:checked + label + div {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    }
+	
+    .slide  div  p {
+        position: absolute;
+		font-size:18px;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 2px 2px 3px #222;
+    }
+	* {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  min-height: calc(100vh - 80px);
+}
+.toch{
+    list-style: none;
+}
+   .foo{
+       
+       width: 100%;
+    text-align: center;
+     height: 30px;
+background: #D8E3AB;
+   }
+.foo1{
+    text-align: center; 
+   
+}
+
+     </style>
+    </head>
+    <body>
+    <header class="top">
+            <div class = "title">Welcome to the Sport Shop</div>
+            <ul class = "menu">
+              <li><a href = "index.html">Главная</a></li>
+              <li><a href = "catalog.html">Каталог</a></li>
+              <li><a href = "contact.html">Контакты</a></li>
+            </ul>
+         
+     
+</header>
+
+<div class="slide">
+        <input type="radio" name="slider2" id="slider2_1" checked="checked">
+        <label for="slider2_1"></label>
+        <div> <img src="image/ball1.jpg"></div>
+        <label for="slider2_2"></label>
+        <input type="radio" name="slider2" id="slider2_2">
+        <label for="slider2_2"></label>
+        <div> <img src="image/sportwear.jpg"></div>
+        <label for="slider2_3"></label>
+        <input type="radio" name="slider2" id="slider2_3">
+        <label for="slider2_3"></label>
+        <div> <img src="image/shoe.jpg"></div>
+        <label for="slider2_4"></label>
+    </div>
+   
+        
+        <footer><li class="toch">
+                <p class="foo"> 
+                    <span class="fo1"> “Все права защищены”  &copy 2018  </span></p>
+                
+            </li>
+            </footer>
+    </body>
+</html>
